@@ -5,7 +5,7 @@ export const verifyToken = (req, res, next) => {
   console.log(req.cookies);
   console.log(req.cookies.token);
   if (!token) {
-    return res.status(401).json({ message: "Not Authenticated!" });
+    return res.status(401).json({ message: "Not Authenticated! no" });
   }
   jwt.verify(token, process.env.JWT_KEY, async (err, payload) => {
     if (err) return res.status(403).json({ message: "Token is not valid" });
