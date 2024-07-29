@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: 'https://househunt-bspg4jz46-varunsood2003s-projects.vercel.app',
+  origin: 'https://househunt-hwzcrezv9-varunsood2003s-projects.vercel.app',
   credentials: true
 }));
 
